@@ -13,12 +13,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           brightness: Brightness.dark,
-          primaryColor: Colors.deepPurple,
+          primaryColor: Colors.green[800],
+          appBarTheme: AppBarTheme(
+            //elevation: 0,
+            backgroundColor: Colors.green[800],
+          ),
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.deepPurple)),
+                backgroundColor: MaterialStateProperty.all(Colors.green[800])),
           ),
-          appBarTheme: AppBarTheme(elevation: 0)),
+      ),
     );
   }
 }
